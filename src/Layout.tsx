@@ -20,7 +20,7 @@ const Layout = ({ children }: any) => {
                   isActive ? "nav-item active" : "nav-item"
                 }
               >
-                Home
+                Introduction
               </NavLink>
             </li>
             <li>
@@ -81,7 +81,9 @@ const Layout = ({ children }: any) => {
           <ul className="sidebar__nav"></ul>
         </div>
       </aside>
-      <main className="main-content">{children}</main>
+      <div className="main-content-container">
+        <main className="main-content">{children}</main>
+      </div>
     </div>
   );
 };

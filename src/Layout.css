@@ -25,7 +25,6 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
-  /* width: 300px; */
   flex: 0 0 300px;
   background-color: #ebeef5;
   padding: 0px;
@@ -64,10 +63,28 @@ h3 {
   margin-top: auto;
 }
 
+.main-content-container {
+  flex-grow: 1; /* Takes the remaining space */
+  overflow-y: auto; /* Allows scrolling within the container */
+  height: 100vh; /* Full viewport height */
+}
+
 .main-content {
-  flex-grow: 1;
+  margin-left: 15%;
+  margin-right: auto; /* Centers the content area */
+  margin-top: 20px; /* Gives some space at the top */
+  margin-bottom: 20px; /* Gives some space at the bottom */
+  max-width: 800px;
   padding: 20px;
-  overflow-y: auto;
+  
+}
+
+@media (max-width: 1292px) {
+  .main-content {
+    margin-left: auto; /* Center on small screens when sidebar is not displayed */
+    margin-right: auto;
+    padding: 20px;
+  }
 }
 
 .nav-item {
@@ -84,15 +101,14 @@ h3 {
 }
 
 .nav-item.active {
-  background-color: #4DBEFF40; /* Hover and active background color */
-  /* Keep the border-radius the same as .nav-item for consistency */
+  background-color: #4DBEFF40; 
 }
 
-.ob-content, .webhook-content, .glossary-content {
+.ob-content, .webhook-content, .glossary-content, .use-guides-content {
   font-family: Arial, sans-serif;
 }
 
-.ob-content p, .webhook-content p, .glossary-content {
+.ob-content p, .webhook-content p, .glossary-content, .use-guides-content {
   line-height: 2;
   margin-bottom: 16px;
 }

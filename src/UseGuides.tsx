@@ -1,6 +1,6 @@
 const UseGuides = () => {
   return (
-    <div className="main-content">
+    <div className="use-guides-content">
       <h1>Use Cases</h1>
       <p>
         There are currently three ways that a lender's systems can interact with
