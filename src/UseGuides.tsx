@@ -12,10 +12,7 @@ const UseGuides = () => {
         A loan application is initiated by a lender's user from inside the
         NestEgg Dashboard web app.
       </p>
-      <img
-        src="http://localhost:3000/api/v1/publicdoc/usecase1"
-        alt="Use Case 1"
-      />
+      <img src="/images/usecase1.png" alt="Use Case 1" />
       <h2>Use Case 2:</h2>
       <p>
         A loan application is initiated by a lender's (existing or applying)
@@ -26,20 +23,14 @@ const UseGuides = () => {
         application.
       </p>
 
-      <img
-        src="http://localhost:3000/api/v1/publicdoc/usecase2"
-        alt="Use Case 2"
-      />
+      <img src="/images/usecase2.png" alt="Use Case 2" />
       <h2>Use Case 3:</h2>
       <p>
         A loan application is initiated by a lender's system, e.g. the lender's
         own or a third-party's online forms embedded within the lender's
         website.
       </p>
-      <img
-        src="http://localhost:3000/api/v1/publicdoc/usecase3"
-        alt="Use Case 3"
-      />
+      <img src="/images/usecase3.png" alt="Use Case 3" />
     </div>
   );
 };

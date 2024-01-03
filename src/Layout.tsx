@@ -30,7 +30,7 @@ const Layout = ({ children }: any) => {
                   isActive ? "nav-item active" : "nav-item"
                 }
               >
-                Use Guides
+                Use Cases
               </NavLink>
             </li>
             <li>

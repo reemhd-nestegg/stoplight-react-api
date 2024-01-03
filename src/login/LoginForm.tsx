@@ -9,7 +9,7 @@ export const LoginForm = ({ onApiChange }: any) => {
 
   useEffect(() => {
     if (loginData) {
-      fetch("http://localhost:3000/api/v1/authenticate", {
+      fetch("https://testing.nestegg.ai/api/v1/authenticate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const LoginForm = ({ onApiChange }: any) => {
 
   useEffect(() => {
     if (token) {
-      fetch("http://localhost:3000/api/v1/openapi/openapi.yml", {
+      fetch("https://testing.nestegg.ai/api/v1/openapi/openapi.yml", {
         method: "GET",
         headers: new Headers({
           "content-type": "application/json",
